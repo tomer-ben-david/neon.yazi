@@ -12,6 +12,7 @@ Neon is a stunning color scheme for [Yazi](https://github.com/sxyazi/yazi), the 
 📁 **Smart Directory Colors** - Special colors for system, project, and user directories
 🔧 **Developer-Focused** - Optimized colors for programming languages and config files
 ⚡ **High Contrast** - Easy-to-read selection and hover states
+📅 **Smart Date Display** - Finder-style date/time formatting (English locale)
 
 ## Color Philosophy
 
@@ -46,7 +47,21 @@ git clone https://github.com/tomer-ben-david/neon.yazi.git ~/.config/yazi/flavor
 dark = "neon"
 ```
 
+3. (Optional) Enable the smart date display in your `~/.config/yazi/yazi.toml`:
+```toml
+[mgr]
+linemode = "mtime"
+```
+
 ## Special Features
+
+### Smart Date Display
+Neon includes a custom Finder-style date formatter that displays modification times in English:
+- Files modified today: Show time only (e.g., "14:30")
+- Files modified within 6 months: Show date and time (e.g., "Nov 17 14:30")
+- Older files: Show date and year (e.g., "Jan 15  2024")
+
+Enable it by setting `linemode = "mtime"` in your yazi.toml.
 
 ### Hidden Files
 Hidden files (dotfiles) are rendered in dim gray with italic styling, making them less intrusive while still visible when needed.
