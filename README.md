@@ -30,7 +30,7 @@ Neon uses a carefully crafted color palette where each color serves a purpose:
 ### Using ya (Recommended)
 
 ```bash
-ya pack -a tomer-ben-david/neon
+ya pkg add tomer-ben-david/neon
 ```
 
 ### Manual Installation
