@@ -73,9 +73,9 @@ Your common directories get bold, vibrant colors:
 - Music - Orange
 - Videos - Pink
 
-## Screenshots
+## Preview
 
-<!-- TODO: Add screenshots -->
+![Neon theme preview](preview.png)
 
 ## Credits
 
