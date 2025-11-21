@@ -17,42 +17,30 @@ marker_selected = { fg = "#1a1b26", bg = "#9ece6a" }
 marker_copied   = { fg = "#1a1b26", bg = "#e0af68" }
 marker_cut      = { fg = "#1a1b26", bg = "#f7768e" }
 
-# Tabs
-tab_active   = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
-tab_inactive = { fg = "#787c99", bg = "#16161e" }
-tab_width    = 1
-
 # Border
 border_symbol = "│"
 border_style  = { fg = "#3d59a1" }
 
-# Symlinks
-link     = { fg = "#2ac3de" }
-orphan   = { fg = "#f7768e", underline = true }
-
 syntect_theme = ""
 
+[tabs]
+active    = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+inactive  = { fg = "#787c99", bg = "#16161e" }
+
 [status]
-separator_open  = ""
-separator_close = ""
-separator_style = { fg = "#3d59a1", bg = "#16161e" }
-
-# Mode indicators - vibrant colors
-mode_normal = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
-mode_select = { fg = "#1a1b26", bg = "#9ece6a", bold = true }
-mode_unset  = { fg = "#1a1b26", bg = "#bb9af7", bold = true }
-
-# Progress bars
 progress_label  = { fg = "#c0caf5", bold = true }
 progress_normal = { fg = "#7aa2f7", bg = "#16161e" }
 progress_error  = { fg = "#f7768e", bg = "#16161e" }
+perm_sep        = { fg = "#787c99" }
+perm_type       = { fg = "#9ece6a" }
+perm_read       = { fg = "#e0af68" }
+perm_write      = { fg = "#f7768e" }
+perm_exec       = { fg = "#7aa2f7" }
 
-# Permissions - color coded
-permissions_t = { fg = "#9ece6a" }
-permissions_r = { fg = "#e0af68" }
-permissions_w = { fg = "#f7768e" }
-permissions_x = { fg = "#7aa2f7" }
-permissions_s = { fg = "#787c99" }
+[mode]
+normal_main = { fg = "#1a1b26", bg = "#7aa2f7", bold = true }
+select_main = { fg = "#1a1b26", bg = "#9ece6a", bold = true }
+unset_main  = { fg = "#1a1b26", bg = "#bb9af7", bold = true }
 
 [input]
 border   = { fg = "#7aa2f7" }
@@ -60,7 +48,7 @@ title    = { fg = "#c0caf5" }
 value    = { fg = "#a9b1d6" }
 selected = { reversed = true }
 
-[select]
+[pick]
 border   = { fg = "#7aa2f7" }
 active   = { fg = "#bb9af7", bold = true }
 inactive = { fg = "#787c99" }
@@ -80,20 +68,13 @@ separator_style = { fg = "#3d59a1" }
 
 [help]
 on      = { fg = "#bb9af7" }
-exec    = { fg = "#7aa2f7" }
+run     = { fg = "#7aa2f7" }
 desc    = { fg = "#787c99" }
 hovered = { bg = "#2d3f76", bold = true }
 footer  = { fg = "#1a1b26", bg = "#a9b1d6" }
 
 [filetype]
 rules = [
-	# ===== SPECIAL FILES =====
-	# Broken symlinks
-	{ is = "orphan", fg = "#f7768e", bg = "#2d2a2e", underline = true },
-
-	# Executables - bright green
-	{ is = "exec", fg = "#9ece6a", bold = true },
-
 	# ===== HIDDEN FILES (dotfiles) =====
 	{ name = ".*", fg = "#787c99", italic = true },
 
@@ -300,7 +281,7 @@ rules = [
 ]
 
 [icon]
-rules = [
+globs = [
 	# Directories get folder icon
 	{ name = "*/", text = "" },
 
