@@ -19,13 +19,13 @@ A dark theme for [Yazi](https://github.com/sxyazi/yazi) with high-contrast color
 
 The theme uses these accent colors:
 
-- `#7aa2f7` - Directories, TypeScript, C/C++
-- `#ff9e64` - Rust, Swift, audio files
-- `#e0af68` - JavaScript, JSON
-- `#9ece6a` - Executables,ok  tests, databases
-- `#bb9af7` - Images, Kotlin, SCSS
-- `#f7768e` - Videos, HTML, Java, archives
-- `#7dcfff` - Go, Markdown
+- ![#7aa2f7](https://placehold.co/15x15/7aa2f7/7aa2f7.png) `#7aa2f7` - Directories, TypeScript, C/C++
+- ![#ff9e64](https://placehold.co/15x15/ff9e64/ff9e64.png) `#ff9e64` - Rust, Swift, audio files
+- ![#e0af68](https://placehold.co/15x15/e0af68/e0af68.png) `#e0af68` - JavaScript, JSON
+- ![#9ece6a](https://placehold.co/15x15/9ece6a/9ece6a.png) `#9ece6a` - Executables, tests, databases
+- ![#bb9af7](https://placehold.co/15x15/bb9af7/bb9af7.png) `#bb9af7` - Images, Kotlin, SCSS
+- ![#f7768e](https://placehold.co/15x15/f7768e/f7768e.png) `#f7768e` - Videos, HTML, Java, archives
+- ![#7dcfff](https://placehold.co/15x15/7dcfff/7dcfff.png) `#7dcfff` - Go, Markdown
 
 ## Installation
 
